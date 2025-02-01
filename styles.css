@@ -1,0 +1,140 @@
+body {
+    font-family: 'Roboto', sans-serif; 
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(135deg, #6a11cb 0%, #2575fc 100%); 
+    color: #fff;
+}
+header {
+    background: #007bff;
+    color: white;
+    text-align: center;
+    padding: 3rem 0; 
+    border-bottom: 4px solid #fff;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+}
+nav ul {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    background: #333;
+    padding: 0;
+    margin: 0;
+    border-bottom: 2px solid #444;
+}
+
+nav ul li {
+    padding: 15px 30px;
+    transition: background-color 0.3s ease;
+}
+
+nav ul li a {
+    color: rgb(21, 9, 9);
+    text-decoration: none;
+    font-weight: 500;
+}
+
+nav ul li:hover {
+    background-color: #007bff;
+    cursor: pointer;
+}
+section {
+    padding: 40px 20px;
+    margin: 20px auto;
+    background: #ffffff;
+    color: #333;
+    border-radius: 8px;
+    max-width: 900px;
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1);
+    transition: box-shadow 0.3s ease;
+}
+
+section:hover {
+    box-shadow: 0 12px 25px rgba(0, 0, 0, 0.15); 
+}
+h1, h2 {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+    letter-spacing: 1px;
+    margin-bottom: 20px;
+}
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+ul li {
+    font-size: 1.1rem;
+    line-height: 1.8;
+    margin-bottom: 10px;
+    background-color: #f8f8f8;
+    padding: 12px;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+}
+
+ul li:hover {
+    background-color: #007bff;
+    color: white;
+    transform: scale(1.02);
+}
+button {
+    padding: 12px 30px;
+    background: #007bff;
+    color: white;
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+button:hover {
+    background: #0056b3;
+    transform: translateY(-3px);
+}
+form {
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+}
+
+input, textarea {
+    margin: 10px 0;
+    padding: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1rem;
+    transition: all 0.3s ease;
+}
+
+input:focus, textarea:focus {
+    border-color: #007bff;
+    outline: none;
+    box-shadow: 0 0 8px rgba(0, 123, 255, 0.6);
+}
+@media (max-width: 768px) {
+    body {
+        background: linear-gradient(135deg, #6a11cb 0%, #2575fc 100%);
+    }
+
+    header {
+        padding: 2rem 0;
+    }
+
+    nav ul {
+        flex-direction: column;
+    }
+
+    nav ul li {
+        padding: 12px;
+    }
+
+    section {
+        padding: 30px 15px;
+    }
+
+    button {
+        padding: 10px 25px;
+    }
+}
